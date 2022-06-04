@@ -9,11 +9,11 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import domain.coffee.MenuBoard;
-import domain.coffee.MenuItem;
-import domain.coffee.MenuKnown;
-import domain.coffee.Menus;
-import domain.coffee.NotExistException;
+import domain.menu.MenuBoard;
+import domain.menu.MenuItem;
+import domain.menu.MenuKnown;
+import domain.menu.Menus;
+import domain.exceptoin.NotExistException;
 
 public class MenuKnownTest {
 

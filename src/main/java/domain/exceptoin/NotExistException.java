@@ -1,4 +1,4 @@
-package domain.coffee;
+package domain.exceptoin;
 
 public class NotExistException extends RuntimeException {
 	public NotExistException(Class<?> clazz) {

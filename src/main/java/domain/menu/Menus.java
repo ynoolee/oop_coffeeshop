@@ -1,7 +1,9 @@
-package domain.coffee;
+package domain.menu;
 
 import java.util.Map;
 import java.util.Optional;
+
+import domain.exceptoin.NotExistException;
 
 public class Menus {
 	private final Map<String, MenuItem> menus;

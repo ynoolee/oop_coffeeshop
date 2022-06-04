@@ -1,4 +1,4 @@
-package domain.coffee;
+package domain.menu;
 
 public class MenuBoard implements MenuKnown {
 	private final Menus menus;

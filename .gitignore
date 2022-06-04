@@ -23,6 +23,7 @@
 cmake-build-*/
 
 .idea
+/build
 
 # File-based project format
 *.iws
