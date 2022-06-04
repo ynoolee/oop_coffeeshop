@@ -12,7 +12,7 @@ public class Menus {
 
 	public MenuItem find(String name) {
 		return Optional.ofNullable(
-			menus.get(name))
-			.orElseThrow(()-> new NotExistException(MenuItem.class));
+				menus.get(name))
+			.orElseThrow(() -> new NotExistException(MenuItem.class));
 	}
 }

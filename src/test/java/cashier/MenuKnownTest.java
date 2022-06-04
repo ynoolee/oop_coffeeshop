@@ -20,13 +20,13 @@ public class MenuKnownTest {
 	private MenuKnown menuKnown;
 
 	@BeforeEach
-	void setUp(){
+	void setUp() {
 		Map<String, MenuItem> menuMap = new HashMap<>();
 
 		MenuItem americano = new MenuItem("아이스아메리카노", 4500);
 		MenuItem vanilla = new MenuItem("바닐라라떼", 5000);
 
-		menuMap.put(americano.name(), americano );
+		menuMap.put(americano.name(), americano);
 		menuMap.put(vanilla.name(), vanilla);
 
 		Menus menus = new Menus(menuMap);
@@ -36,7 +36,7 @@ public class MenuKnownTest {
 
 	@Nested
 	@DisplayName("inform 메소드는")
-	public class InformTest{
+	public class InformTest {
 
 		@Nested
 		@DisplayName("메뉴이름을 물어보면")
@@ -57,8 +57,8 @@ public class MenuKnownTest {
 			void test_emptyMenu() {
 				String menuName = "따뜻한 아이스아메리카노";
 
-				Assertions.assertThatThrownBy(()->
-					menuKnown.inform(menuName))
+				Assertions.assertThatThrownBy(() ->
+						menuKnown.inform(menuName))
 					.isInstanceOf(NotExistException.class);
 			}
 		}
